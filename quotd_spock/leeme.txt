@@ -1,0 +1,3 @@
+Aplicacion quotd_spock
+
+Basada en un ejemplo del libro Grails in Action

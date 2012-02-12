@@ -1,0 +1,5 @@
+Aplicación collab-todo
+
+Aplicación de ejemplo del libro Beginning Groovy and Grails
+
+

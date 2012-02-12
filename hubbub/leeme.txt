@@ -1,0 +1,3 @@
+Aplicación hubbub
+
+Aplicación de ejemplo de Grails in Action
