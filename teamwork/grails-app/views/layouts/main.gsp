@@ -18,7 +18,23 @@
         <r:layoutResources />
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
+    <div id="header">
+        <jsec:isLoggedIn>
+            <div id="profileActions">
+            <span class="signout">
+                <g:link controller="auth" action="signOut">Sign out</g:link>
+            </span>
+            </div>
+        </jsec:isLoggedIn>
+        <h1><g:link controller="home">Teamwork</g:link></h1>
+    </div>
+    <jsec:isLoggedIn>
+        <div id="navigationcontainer">
+        <span id="navigation">
+            <g:link controller="home" class="navigationitem">Home</g:link>
+        </span>
+        </div>
+    </jsec:isLoggedIn>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>

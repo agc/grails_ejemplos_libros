@@ -131,3 +131,18 @@ a.taglink:link, a.taglink:visited, a.taglink:hover {color: green; }
 .newactions a:link, .newactions a:visited, .newactions a:hover {
     color: white;
 }
+
+
+/* Adicionales */
+
+
+.footer {
+    background: #abbf78;
+    background-image: url('../images/header_background.png'); height:25px; width: 100%;
+    color: #000;
+    clear: both;
+    font-size: 0.8em;
+    margin-top: 1.5em;
+    padding: 1em;
+    min-height: 1em;
+}

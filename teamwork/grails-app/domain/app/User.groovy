@@ -2,6 +2,7 @@ package app
 
 class User {
 
+
     String username
     String title
     String firstName
@@ -17,9 +18,13 @@ class User {
         firstName(blank: false, size:1..20)
         lastName(blank: false, size:1..30)
         role()
-        password(blank: false, size:6..20, password:true)
+        password(blank: false, minSize:6, password:true)
         dateCreated(nullable: true)
         lastModified(nullable: true)
+    }
+
+    def needToHash( String password ) {
+        return password != this.password
     }
 
     String toString() {
