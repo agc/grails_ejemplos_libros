@@ -25,6 +25,10 @@
            <!-- <g:fieldValue bean="${message}" field="title"/> -->
             <g:message code="message.title" args="${[message.title]}" encodeAs="HTML"/>
         </div>
+        <div class="messagetitlesupplimentary">
+            <g:message code="message.user"
+                       args="${[message.user.firstName, message.user.lastName]}"/>
+        </div>
         <div class="messagebody">
            <!-- <g:fieldValue bean="${message}" field="detail"/>   -->
             <g:message code="message.detail" args="${[message.detail]}" encodeAs="HTML"/>
@@ -34,3 +38,8 @@
 
 </body>
 </html>
+
+
+
+
+

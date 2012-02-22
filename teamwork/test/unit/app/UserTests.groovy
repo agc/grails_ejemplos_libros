@@ -11,7 +11,11 @@ import org.junit.*
 @TestFor(User)
 class UserTests {
 
-    void testSomething() {
-       fail "Implement me"
+
+
+    void testCanDetermineIfAPasswordNeedsHashing() {
+        def user = new User( password: 'oldpassword' )
+        assertTrue( user.needToHash( 'newpassword' ) )
+        assertFalse( user.needToHash( 'oldpassword' ) )
     }
 }
