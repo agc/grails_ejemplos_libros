@@ -1,0 +1,15 @@
+#Grails Metadata file
+#Thu Feb 23 19:20:20 CET 2012
+app.grails.version=2.0.0
+app.name=hubbub
+app.servlet.version=2.4
+app.version=0.1
+plugins.acegi=0.5.1
+plugins.feeds=1.4
+plugins.functional-test=1.2.5
+plugins.google-chart=0.4.8
+plugins.hibernate=2.0.0
+plugins.mail=0.5
+plugins.navigation=1.0.4
+plugins.remoting=1.0
+plugins.searchable=0.5.1
