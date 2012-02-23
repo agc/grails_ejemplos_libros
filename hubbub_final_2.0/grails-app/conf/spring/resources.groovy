@@ -2,6 +2,7 @@ import org.springframework.jmx.support.MBeanServerFactoryBean
 import org.springframework.jmx.export.MBeanExporter
 import org.hibernate.jmx.StatisticsService
 
+
 // Place your Spring DSL code here
 beans = {
     // This is required for the HTTP Basic authentication to work properly.
@@ -25,4 +26,9 @@ beans = {
         server = mbeanServer
         beans = ["org.hibernate:name=statistics": hibernateStats]
     }
+
+    creditCardService(com.grailsinaction.CreditCardService)
 }
+
+
+

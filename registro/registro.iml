@@ -31,9 +31,7 @@
       <sourceFolder url="file://$MODULE_DIR$/test/integration" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/test/unit" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/grails-app/utils" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/grails-app/jobs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/grails-app/i18n" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/test/functional" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target/classes" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -74,7 +72,6 @@
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.springframework/spring-aspects/jars/spring-aspects-3.1.0.RELEASE.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.springframework/spring-aop/jars/spring-aop-3.1.0.RELEASE.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.springframework/spring-core/jars/spring-core-3.1.0.RELEASE.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/javax.mail/mail/jars/mail-1.4.3.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.6.2.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.6.2.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/log4j/log4j/bundles/log4j-1.2.16.jar!/" />
@@ -90,16 +87,7 @@
           <root url="jar://$USER_HOME$/.grails/ivy-cache/cglib/cglib/jars/cglib-2.2.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.aspectj/aspectjrt/jars/aspectjrt-1.6.10.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.aspectj/aspectjweaver/jars/aspectjweaver-1.6.10.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.hibernate/hibernate-ehcache/jars/hibernate-ehcache-3.6.7.Final.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/dom4j/dom4j/jars/dom4j-1.6.1.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/javassist/javassist/jars/javassist-3.12.0.GA.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/javax.validation/validation-api/jars/validation-api-1.0.0.GA.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.hibernate/hibernate-validator/jars/hibernate-validator-4.1.0.Final.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.hibernate/hibernate-commons-annotations/jars/hibernate-commons-annotations-3.2.0.Final.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/antlr/antlr/jars/antlr-2.7.6.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.hibernate/hibernate-core/jars/hibernate-core-3.6.7.Final.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.springframework/spring-test/jars/spring-test-3.1.0.RELEASE.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/javax.activation/activation/jars/activation-1.1.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/junit/junit/jars/junit-4.10.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/xalan/serializer/jars/serializer-2.7.1.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/net.java.dev.jna/jna/jars/jna-3.2.3.jar!/" />
@@ -118,23 +106,28 @@
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-logging-log4j/jars/tomcat-embed-logging-log4j-7.0.16.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-jasper/jars/tomcat-embed-jasper-7.0.16.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-core/jars/tomcat-embed-core-7.0.16.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.4.3.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/xml-apis/xml-apis/jars/xml-apis-1.0.b2.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.16.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.eclipse.jdt.core.compiler/ecj/jars/ecj-3.6.2.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.tomcat/tomcat-catalina-ant/jars/tomcat-catalina-ant-7.0.16.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.springframework.webflow/spring-js/jars/spring-js-2.0.8.RELEASE.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.hibernate/hibernate-ehcache/jars/hibernate-ehcache-3.6.7.Final.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/dom4j/dom4j/jars/dom4j-1.6.1.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/javassist/javassist/jars/javassist-3.12.0.GA.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/javax.validation/validation-api/jars/validation-api-1.0.0.GA.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.hibernate/hibernate-validator/jars/hibernate-validator-4.1.0.Final.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.hibernate/hibernate-commons-annotations/jars/hibernate-commons-annotations-3.2.0.Final.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/antlr/antlr/jars/antlr-2.7.6.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.hibernate/hibernate-core/jars/hibernate-core-3.6.7.Final.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/jboss/javassist/jars/javassist-3.7.ga.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/ognl/ognl/jars/ognl-2.7.3.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.springframework.webflow/spring-webflow/jars/spring-webflow-2.0.8.RELEASE.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.springframework.webflow/spring-binding/jars/spring-binding-2.0.8.RELEASE.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.springframework.webflow/spring-js/jars/spring-js-2.0.8.RELEASE.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.eclipse.jdt.core.compiler/ecj/jars/ecj-3.6.2.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.tomcat/tomcat-catalina-ant/jars/tomcat-catalina-ant-7.0.16.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
         <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="hubbub-grailsPlugins" />
+    <orderEntry type="module" module-name="registro-grailsPlugins" />
   </component>
 </module>
 

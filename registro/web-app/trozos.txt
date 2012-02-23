@@ -1,0 +1,6 @@
+<g:isLoggedIn>
+                    <g:render template="/post/sidebar_profile"/>
+                </g:isLoggedIn>
+                <g:isNotLoggedIn>
+                    <g:render template="/post/sidebar_login"/>
+                </g:isNotLoggedIn>
