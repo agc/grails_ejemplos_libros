@@ -45,7 +45,7 @@ class PaymentCommand implements Serializable {
 
 class ShopController {
 
-    def creditCardService
+   // def creditCardService
 
     def index = {
         redirect(action: "order")
