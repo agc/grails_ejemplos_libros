@@ -38,5 +38,24 @@ class UserController {
 
     }
 
+    // Se usa para mandar el formulario, no habra params
+    // y para guardar lo enviado por el formulario
+    def register = {
+
+        if (params) {
+            def user = new User(params)
+            if (user.validate()) {
+                user.save()
+                flash.message = "Successfully Create User"
+                redirect(uri: '/')
+            } else {
+                flash.message = "Error Registering User"
+                return [ user: user ]
+            }
+
+        }
+
+    }
+
 
 }
