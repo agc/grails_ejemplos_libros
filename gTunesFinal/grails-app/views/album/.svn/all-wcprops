@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/album
+END
+_albumList.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/album/_albumList.gsp
+END
+_album.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/album/_album.gsp
+END
+show.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/album/show.gsp
+END

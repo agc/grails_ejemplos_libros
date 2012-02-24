@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/artist
+END
+_artistList.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/artist/_artistList.gsp
+END
+_artist.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/artist/_artist.gsp
+END
