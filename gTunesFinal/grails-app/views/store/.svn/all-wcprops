@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/store
+END
+index.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/store/index.gsp
+END
+shop.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/store/shop.gsp
+END
+_searchbox.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/store/_searchbox.gsp
+END
+genre.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/store/genre.gsp
+END
+_recommendations.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/store/_recommendations.gsp
+END
+_searchResults.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/store/_searchResults.gsp
+END
+_top5panel.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/store/_top5panel.gsp
+END

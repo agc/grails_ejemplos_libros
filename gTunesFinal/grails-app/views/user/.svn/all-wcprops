@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/user
+END
+_loginForm.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/user/_loginForm.gsp
+END
+_welcomeMessage.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/user/_welcomeMessage.gsp
+END
+register.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/grails-app/views/user/register.gsp
+END

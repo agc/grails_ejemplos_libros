@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/grails/!svn/ver/8903/trunk/grails-samples/dgg/Chapter09/test/unit/com/g2one/gtunes
+END
+AlbumArtServiceTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/grails/!svn/ver/8903/trunk/grails-samples/dgg/Chapter09/test/unit/com/g2one/gtunes/AlbumArtServiceTests.groovy
+END
+AlbumTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/test/unit/com/g2one/gtunes/AlbumTests.groovy
+END
+UserControllerTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/test/unit/com/g2one/gtunes/UserControllerTests.groovy
+END
+SongTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/grails/!svn/ver/8126/trunk/grails-samples/dgg/Chapter09/test/unit/com/g2one/gtunes/SongTests.groovy
+END
