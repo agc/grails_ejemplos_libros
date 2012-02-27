@@ -1,0 +1,11 @@
+ <nav:resources/>
+
+ <g:javascript library="application" />
+         <g:javascript library="scriptaculous"/>
+          <nav:render group="tabs"/>
+          <g:isLoggedIn>
+                                          <g:render template="/post/sidebar_profile"/>
+                                      </g:isLoggedIn>
+                                      <g:isNotLoggedIn>
+                                          <g:render template="/post/sidebar_login"/>
+                                      </g:isNotLoggedIn>
