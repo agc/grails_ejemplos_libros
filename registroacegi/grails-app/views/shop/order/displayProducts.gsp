@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>Shop for Official Merchandise</title>
+
     <meta content="main" name="layout"/>
 
 </head>

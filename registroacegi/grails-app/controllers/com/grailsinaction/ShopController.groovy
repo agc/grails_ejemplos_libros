@@ -63,15 +63,23 @@ class ShopController {
                     return error()
                 }
                 [ orderDetails: odc, orderStartDate: new Date() ]
-            }.to("finish")
+            }.to("enterAddress")
             on("cancel").to("finish")
         }
 
-
+        enterAddress {
+            on("next") { ShippingCommand sc ->
+                conversation.sc = sc
+                if (sc.hasErrors()) {
+                    return error()
+                }
+            }.to("checkShipping")
+            on("previous").to("displayProducts")
+        }
 
         finish {
             //redirect(controller:"homePage", action: "index")
-            redirect(uri:"/")
+            redirect(uri:"http://www.elpais.es")
         }
 
 
