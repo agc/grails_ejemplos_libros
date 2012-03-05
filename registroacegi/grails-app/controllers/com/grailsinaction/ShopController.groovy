@@ -77,10 +77,73 @@ class ShopController {
             on("previous").to("displayProducts")
         }
 
-        finish {
-            //redirect(controller:"homePage", action: "index")
-            redirect(uri:"http://www.elpais.es")
+        checkShipping {
+            action {
+                /*if (conversation.sc.customShipping) {
+                    custom()
+                } else {
+                    standard()
+                }  */
+                custom()
+            }
+            on("custom").to("customShipping")
+            on("standard").to("enterPayment")
         }
+
+        customShipping {
+           /* subflow(customShippingFlow)
+            on("goBack").to("enterAddress")
+            on("standardShipping") {
+                conversation.sc.customShipping = false
+            }.to("enterPayment")
+            on("customShipping").to("enterPayment")
+            */
+            action {
+                enterPayment()
+            }
+
+            on("enterPayment").to("enterPayment")
+        }
+
+
+        enterPayment {
+            on("next") {  PaymentCommand pc ->
+                flow.pc = pc
+                if (pc.hasErrors()) {
+                    return error()
+                }
+            }.to("validateCard")
+            on("previous").to("enterAddress")
+        }
+
+
+        validateCard {
+            action {
+                def validCard = new Date().hours > 11 // PM is nice
+               // def validCard = creditCardService.checkCard( conversation.pc.cardNumber, conversation.pc.name,  conversation.pc.expiry)
+                if (validCard) {
+                    valid()
+                } else {
+                    flow.pc.errors.rejectValue("cardNumber",
+                            "card.failed.validation",
+                            "This credit card is dodgy")
+                    invalid()
+                }
+            }
+            on("valid").to("orderComplete")
+            on("invalid").to("enterPayment")
+        }
+
+        orderComplete {
+            // display order
+            on("finished").to("finish")
+        }
+
+        finish {
+            redirect(controller:"homePage", action: "index")
+        }
+
+
 
 
     }
