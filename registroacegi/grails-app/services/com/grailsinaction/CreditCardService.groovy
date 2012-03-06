@@ -2,7 +2,7 @@ package com.grailsinaction
 
 class CreditCardService implements Serializable{
 
-    static scope = "flow"
+    static scope = "conversation"
     static transactional = false
 
     def cardChecked = false

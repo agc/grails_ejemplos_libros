@@ -51,6 +51,29 @@ class ShopController {
         redirect(action: "order")
     }
 
+    def customShippingFlow = {
+
+        selectShippingType {
+            on("next") {
+                conversation.sc.shippingType = params.shippingType
+            }.to("selectShippingOptions")
+            on("standardShipping").to("standardShipping")
+            on("previous").to("goBack")
+        }
+
+        selectShippingOptions {
+            on("previous").to("selectShippingType")
+            on("next") {
+                conversation.sc.shippingOptions = params.shippingOptions
+            }.to("customShipping")
+        }
+
+        customShipping()
+        standardShipping()
+        goBack()
+    }
+
+
 
 
     def orderFlow = {
@@ -79,30 +102,27 @@ class ShopController {
 
         checkShipping {
             action {
-                /*if (conversation.sc.customShipping) {
+                if (conversation.sc.customShipping) {
                     custom()
                 } else {
+
                     standard()
-                }  */
-                custom()
+                }
+                //custom()
             }
             on("custom").to("customShipping")
             on("standard").to("enterPayment")
         }
 
         customShipping {
-           /* subflow(customShippingFlow)
+            subflow(action:"customShipping")
             on("goBack").to("enterAddress")
             on("standardShipping") {
                 conversation.sc.customShipping = false
             }.to("enterPayment")
             on("customShipping").to("enterPayment")
-            */
-            action {
-                enterPayment()
-            }
 
-            on("enterPayment").to("enterPayment")
+
         }
 
 
