@@ -119,8 +119,8 @@ class ShopController {
 
         validateCard {
             action {
-                def validCard = new Date().hours > 11 // PM is nice
-               // def validCard = creditCardService.checkCard( conversation.pc.cardNumber, conversation.pc.name,  conversation.pc.expiry)
+               // def validCard = new Date().hours > 11 // PM is nice
+                def validCard = creditCardService.checkCard( flow.pc.cardNumber, flow.pc.name,  flow.pc.expiry)
                 if (validCard) {
                     valid()
                 } else {
