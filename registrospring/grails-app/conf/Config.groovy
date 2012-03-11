@@ -96,3 +96,38 @@ log4j = {
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.sysgears.example.User'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.sysgears.example.UserRole'
 grails.plugins.springsecurity.authority.className = 'com.sysgears.example.Role'
+
+grails.plugins.springsecurity.securityConfigType = "InterceptUrlMap"
+
+grails.plugins.springsecurity.interceptUrlMap = [
+        '/secure/**':    ['ROLE_ADMIN'],
+        '/finance/**':   ['ROLE_FINANCE', 'IS_AUTHENTICATED_FULLY'],
+        '/js/**':        ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/css/**':       ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/images/**':    ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/*':            ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/login/**':     ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/logout/**':    ['IS_AUTHENTICATED_ANONYMOUSLY']
+]
+
+grails.plugins.springsecurity.ipRestrictions = [
+        '/secure/**': [ '192.168.1.61','192.168.1.60','192.168.1.64']
+
+]
+
+grails {
+    mail {
+        host = "smtp.gmail.com"
+        port = 465
+        username = "agalveca@gmail.com"
+        password = "agc5173"
+        props = ["mail.smtp.auth":"true",
+                "mail.smtp.socketFactory.port":"465",
+                "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+                "mail.smtp.socketFactory.fallback":"false"]
+    }
+}
+
+
+
+
