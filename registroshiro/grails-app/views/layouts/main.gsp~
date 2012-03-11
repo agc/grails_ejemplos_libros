@@ -36,7 +36,7 @@
     </div>
 
     <div class="logo">
-        <img src="${createLinkTo(dir:'images',file:'logo_registro.png')}" alt="Grails" />
+        <img src="${createLinkTo(dir:'images',file:'iesreg-logo.png')}" alt="Grails" />
     </div>
     <div id="navPane">
         <div id="navButtons" style="display:${request.user? 'block' :'none'}">
